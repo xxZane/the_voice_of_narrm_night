@@ -189,3 +189,29 @@ canvas {
   background: transparent;
   color: black;
 }
+
+@media (max-width: 700px) {
+  body {
+    background: #ddd;
+    overflow-x: hidden;
+  }
+
+  .poster-page {
+    width: 100vw;
+    height: calc(100vw * 842 / 595);
+    margin: 0 auto;
+    transform: none;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .controls {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    margin: 12px 0 0;
+  }
+}
