@@ -198,21 +198,32 @@ canvas {
     align-items: center;
   }
 
-  /*  整体缩放 poster（核心） */
+  /* ⭐ 核心：直接改尺寸，不用 scale */
   .poster-page {
-    transform: scale(0.6);              
-    transform-origin: top center;
+    width: 90vw;
+    max-width: 380px;
 
-    margin: 20px auto 0;
+    aspect-ratio: 595 / 842;
+    height: auto;
+
+    margin: 16px auto;
   }
 
-  /*  让 controls 跟着对齐 */
-  .controls {
-    width: 595px;                      /* 保持和原始一致 */
-    margin: 12px auto 24px;
+  /* ⭐ canvas 跟随容器 */
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
 
-    transform: scale(0.6);             /*  和 poster 同比例 */
-    transform-origin: top center;
+  /* ⭐ controls 和 poster 同宽 */
+  .controls {
+    width: 90vw;
+    max-width: 380px;
+
+    margin: 16px auto 24px;
+
+    display: flex;
+    justify-content: space-between;
   }
 
 }
