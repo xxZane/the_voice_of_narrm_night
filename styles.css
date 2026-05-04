@@ -198,7 +198,7 @@ canvas {
     align-items: center;
   }
 
-  /* ⭐ 核心：直接改尺寸，不用 scale */
+  /*  核心：直接改尺寸，不用 scale */
   .poster-page {
     width: 90vw;
     max-width: 380px;
@@ -209,13 +209,13 @@ canvas {
     margin: 16px auto;
   }
 
-  /* ⭐ canvas 跟随容器 */
+  /*  canvas 跟随容器 */
   canvas {
     width: 100% !important;
     height: 100% !important;
   }
 
-  /* ⭐ controls 和 poster 同宽 */
+  /*  controls 和 poster 同宽 */
   .controls {
     width: 90vw;
     max-width: 380px;
@@ -226,4 +226,80 @@ canvas {
     justify-content: space-between;
   }
 
+    .text-section {
+
+    height: 86px;
+
+    padding: 12px;
+
+    padding-top: 24px;
+
+  }
+
+  .poster-title {
+
+    font-size: 12px;
+
+    line-height: 1.25;
+
+  }
+
+  .year,
+
+  .date,
+
+  .time,
+
+  .author,
+
+  .bullet-notes {
+
+    font-size: 7px;
+
+  }
+
+  .middle-info {
+
+    line-height: 1.8;
+
+  }
+
+  .poster-info {
+
+    column-gap: 10px;
+
+    transform: translateX(10px);
+
+  }
+
+  .poster-line {
+
+    width: calc(100% - 105px);
+
+    margin-bottom: 8px;
+
+  }
+
+  .bullet-notes {
+
+    right: -14px;
+
+    bottom: 12px;
+
+    width: 115px;
+
+    height: 330px;
+
+    padding-left: 8px;
+
+    gap: 1px;
+
+    line-height: 1.05;
+
+  }
+
+  .bullet-notes li {
+
+    max-width: 100px;
+    }
 }
