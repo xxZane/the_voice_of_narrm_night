@@ -189,3 +189,30 @@ canvas {
   background: transparent;
   color: black;
 }
+
+@media (max-width: 700px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*  整体缩放 poster（核心） */
+  .poster-page {
+    transform: scale(0.6);              
+    transform-origin: top center;
+
+    margin: 20px auto 0;
+  }
+
+  /*  让 controls 跟着对齐 */
+  .controls {
+    width: 595px;                      /* 保持和原始一致 */
+    margin: 12px auto 24px;
+
+    transform: scale(0.6);             /*  和 poster 同比例 */
+    transform-origin: top center;
+  }
+
+}
