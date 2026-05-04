@@ -4,13 +4,28 @@ body {
   background: #ddd;
 }
 
-.poster-page {
-  width: 595px;
-  height: 842px;
-  background: white;
-  position: relative;
-  margin: 20px auto;
-  overflow: hidden;
+@media (max-width: 700px) {
+  body {
+    background: #ddd;
+    overflow-x: hidden;
+  }
+
+  .poster-page {
+    width: calc(100vw - 20px);   /*  左右各留10px */
+    height: calc((100vw - 20px) * 842 / 595);
+
+    margin: 10px auto;           /*  上下也给一点呼吸 */
+  }
+
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .controls {
+    width: calc(100vw - 20px);
+    margin: 10px auto 20px;
+  }
 }
 
 canvas {
