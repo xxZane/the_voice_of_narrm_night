@@ -100,7 +100,7 @@ canvas {
 .bullet-notes {
   position: absolute;
   right: -24px;
-  bottom: 36px;
+  bottom: 40px;
   width: 170px;
   height: 500px;
 
@@ -154,7 +154,7 @@ canvas {
 /* 左侧按钮组 */
 .controls-left {
   display: flex;
-  gap: 14px;                 /* 保持你现在的间距 */
+  gap: 14px;                 /* 保持现在的间距 */
 }
 
 /* 按钮基础 */
