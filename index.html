@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Sound Poster Generator</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+  <main id="poster-page" class="poster-page">
+    <section id="image-section" class="image-section"></section>
+    
+    <section class="image-section">
+      <!-- p5.js canvas will appear here -->
+    </section>
+
+    <section class="text-section">
+      <div class="poster-line"></div>
+
+      <div class="poster-info">
+        <div class="left-info">
+          <div class="poster-title">THE VOICE OF NARRM NIGHT</div>
+        </div>
+
+        <div class="middle-info">
+          <div class="year">2026</div>
+          <div class="author">Zane</div>
+          <div class="date" id="dateText">FEB25</div>
+          <div class="time" id="timeText">10:45PM</div>
+        </div>
+      </div>
+    </section>
+
+    <ul class="bullet-notes" id="soundNotes">
+      <li>car running</li>
+      <li>traffic light</li>
+      <li>tram ding</li>
+    </ul>
+  </main>
+
+  <div class="controls">
+    <div class="controls-left">
+      <button class="control-btn" onclick="startMicrophone()">Start Mic</button>
+      <button class="control-btn" onclick="stopMicrophone()">Stop Mic</button>
+    </div>
+
+    <button class="control-btn primary" onclick="exportPoster()">Save the Voice</button>
+  </div>
+
+  <script src="sketch.js"></script>
+  <script type="module" src="audio-classifier.js"></script>
+
+</body>
+</html>
