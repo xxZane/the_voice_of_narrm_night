@@ -240,7 +240,7 @@ canvas {
 
     font-size: 12px;
 
-    line-height: 1.25;
+    line-height: 1.35;
 
   }
 
@@ -261,7 +261,7 @@ canvas {
   .middle-info {
 
     line-height: 2.0;
-    row-gap: 1.5px;
+    row-gap: 2px;
 
   }
 
