@@ -9,25 +9,40 @@ body {
     background: #ddd;
     overflow-x: hidden;
 
+    margin: 0;
+    padding: 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .poster-page {
-    width: calc(100vw - 40px);
+    width: calc(100vw - 40px) !important;  /*  强制生效 */
     max-width: 380px;
 
-    height: auto;                /*关键 */
-    aspect-ratio: 595 / 842;     /*保持比例 */
+    aspect-ratio: 595 / 842;
 
-    margin-top: 16px;
+    margin: 20px auto 16px !important;     /*  上下左右留白 */
+    box-sizing: border-box;
+    padding: 10px;
   }
 
   canvas {
     width: 100% !important;
-    height: auto !important;     /*关键：不要撑高 */
+    height: auto !important;
+    display: block;
   }
+
+  .controls {
+    width: calc(100vw - 40px);
+    max-width: 380px;
+
+    margin: 16px auto 24px;               /*  和 poster 拉开距离 */
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
   .controls {
     width: calc(100vw - 40px);
