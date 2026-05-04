@@ -232,7 +232,7 @@ canvas {
 
     padding: 12px;
 
-    padding-top: 24px;
+    padding-top: 30px;
 
   }
 
@@ -260,7 +260,8 @@ canvas {
 
   .middle-info {
 
-    line-height: 1.8;
+    line-height: 2.4;
+    row-gap: 2px;
 
   }
 
@@ -276,7 +277,7 @@ canvas {
 
     width: calc(100% - 105px);
 
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 
   }
 
@@ -290,7 +291,7 @@ canvas {
 
     height: 330px;
 
-    padding-left: 8px;
+    padding-left: 14px;
 
     gap: 1px;
 
@@ -301,5 +302,7 @@ canvas {
   .bullet-notes li {
 
     max-width: 100px;
+    display: list-item; /* 确保圆点显示 */
+    list-style-type: disc;
     }
 }
